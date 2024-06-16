@@ -30,7 +30,9 @@ export default function NavIcons() {
 
             </div>
 
-            <a href="#"><img width="20" height="20" src="https://static-cdn.jtvnw.net/jtv_user_pictures/3f507bcb-395d-4998-8103-1c1849b71289-profile_image-70x70.png" className="rounded-full pr-1" alt="" /></a>
+            <div className="pr-1">
+                <a href="#"><img width="20" height="20" src="https://static-cdn.jtvnw.net/jtv_user_pictures/3f507bcb-395d-4998-8103-1c1849b71289-profile_image-70x70.png" className="rounded-full " alt="" /></a>
+            </div>
         </div>
     )
 }
