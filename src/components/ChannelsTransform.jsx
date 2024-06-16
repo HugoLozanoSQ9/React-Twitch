@@ -26,7 +26,7 @@ export default function ChannelsTransform({ img, title, status, type, views }) {
             </div>
 
             <div className={clsx("hidden lg:col-start-3 lg:col-end-4 w-full lg:flex lg:items-center lg:justify-center lg:gap-2 ", {"lg:hidden":status})}>
-                <span className="text-[white] text-[0.6rem]"> Desconectado </span>
+                <span className="text-[#dedee3] text-[0.6rem]"> Desconectado </span>
             </div>
 
         </div>
