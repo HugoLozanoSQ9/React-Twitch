@@ -1,8 +1,8 @@
 export default function AsideRigthTopSections() {
     return (
         <>
-            <section className="hidden text-white text-2xl lg:flex lg:items-center lg:gap-[7.8rem] lg:w-full ">
-                PARA TI
+            <section className="hidden text-white text-2xl lg:flex lg:items-center lg:gap-[7.8rem] lg:w-full font-bold">
+                Para ti
                 <svg width="20" height="20" viewBox="0 0 20 20" focusable="false" aria-hidden="true" role="presentation" className=" ScIconSVG-sc-1q25cff-1 jpczqG">
                     <g>
                         <path fill="#ffffff" d="M16 16V4h2v12h-2zM6 9l2.501-2.5-1.5-1.5-5 5 5 5 1.5-1.5-2.5-2.5h8V9H6z"></path>
