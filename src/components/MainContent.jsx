@@ -1,5 +1,6 @@
 import MainExplorerItemx from "./MainExplorerItems"
 import MainSearch from "./MainSearch"
+import MainCard from "./MainCard"
 
 export default function MainContent() {
     return (
@@ -11,13 +12,13 @@ export default function MainContent() {
 
             </div>
 
-            <div className="text-[white] p-6 col-start-1 col-end-3 flex flex-wrap gap-2 " >
 
-                <MainExplorerItemx />
+            <MainExplorerItemx />
 
-            </div>
+            <MainSearch />
 
-            <MainSearch/>
+            <MainCard />
+
 
         </section>
     )

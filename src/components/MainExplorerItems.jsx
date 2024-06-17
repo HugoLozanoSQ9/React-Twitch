@@ -24,16 +24,19 @@ export default function MainExplorerItemx() {
 
     ]
     return (
-        <>
-            {items.map((item) => {
+
+        <div className="text-[white] p-6 col-start-1 col-end-3 flex flex-wrap gap-2 " >
+
+
+            {items.map((item, index) => {
                 return (
-                    <div className="bg-[#5c16c5] rounded-md flex justify-evenly items-center gap-10 w-[47%] h-[23%] sm:w-[32%] lg:w-[24%] xl:w-[19%] ">
+                    <div key={index} className="bg-[#5c16c5] rounded-md flex justify-normal items-center gap-2 w-[48.5%] h-[23%] sm:w-[32%] lg:w-[24%] xl:w-[19%] ">
                         <p className="text-[24px]">{item.name}</p>
                         <img src={item.img} className="" alt="" />
                     </div>
                 )
             })}
-            <div className="w-full">
+            <div className="w-full flex flex-grow">
                 <a href="#">
                     <p className="text-[#bf94ff] text-2xl  "> <span className="border-b border-[#bf94ff]">
                         Categorías </span>
@@ -46,6 +49,7 @@ export default function MainExplorerItemx() {
                 </a>
             </div>
 
-        </>
+        </div>
+
     )
 }

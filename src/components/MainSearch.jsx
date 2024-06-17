@@ -11,7 +11,7 @@ export default function MainSearch() {
 
             </div>
 
-            <div className="flex items-center justify-end gap-2 pr-2">
+            <div className="sm:flex sm:items-center sm:justify-end sm:gap-2 pr-2 hidden">
                 <p className="text-[#f7f7f8] font-bold">Ordenar por</p>
 
                 <div className="border-[1px] ">
@@ -30,6 +30,25 @@ export default function MainSearch() {
             </div>
 
 
+            <div className="col-start-1 col-end-3 w-full">
+                <div className="flex items-center justify-normal gap-2 pr-2 sm:hidden">
+                    <p className="text-[#f7f7f8] font-bold">Ordenar por</p>
+
+                    <div className="border-[1px] ">
+                        <button type="button">
+                            <span className="inline-flex items-center text-xs text-[#f7f7f8] p-1 f">
+                                Recomendaciones para ti
+                                <svg className="h-5 w-5 flex-shrink-0 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </button>
+
+                    </div>
+
+
+                </div>
+            </div>
 
 
         </div>

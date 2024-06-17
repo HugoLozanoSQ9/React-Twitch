@@ -19,9 +19,9 @@ export default function NavIcons() {
             <div className=" pr-2 flex gap-4 ">
 
                 {
-                    icon.map((svg) => {
+                    icon.map((svg,index) => {
                         return (
-                            <a href="#">
+                            <a key={index} href="#">
                                 {svg}
                             </a>
                         )

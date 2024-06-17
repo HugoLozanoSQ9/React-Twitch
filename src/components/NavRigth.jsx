@@ -22,9 +22,9 @@ export default function NavRigth() {
             <div className="pl-2 pt-1 col-start-1 col-end-2 flex flex-row items-center gap-3" >
                 <a href="#"><Twitch /></a>
 
-                {incons.map((icon) => {
+                {incons.map((icon, index) => {
                     return (
-                        <button className="sm:hidden block">
+                        <button key={index} className="sm:hidden block">
                             {icon}
                         </button>
                     )

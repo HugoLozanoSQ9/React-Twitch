@@ -9,42 +9,42 @@ export default function AsideRigth() {
             title: "Anglemar",
             status: true,
             Type: "Solo chateando",
-            views:850
+            views: 850
         },
         {
             image: "https://static-cdn.jtvnw.net/jtv_user_pictures/d264f3ae-802b-4af7-8d62-5e458d394ccd-profile_image-70x70.png",
             title: "VeteALAVersh_dk",
             status: true,
             Type: "Arte",
-            views:364
+            views: 364
         },
         {
             image: "https://static-cdn.jtvnw.net/jtv_user_pictures/commanderroot-profile_image-dd5d1687fe9ed868-70x70.png",
             title: "CommanderRoot",
             status: true,
             Type: "Path of Exile",
-            views:"4K"
+            views: "4K"
         },
         {
             image: "https://static-cdn.jtvnw.net/jtv_user_pictures/50f9421f-f454-4337-bd3f-48771ff03cfb-profile_image-70x70.jpeg",
             title: "Yeonilevra",
             status: false,
             Type: null,
-            views:12
+            views: 12
         },
         {
             image: "https://static-cdn.jtvnw.net/jtv_user_pictures/d666490e-caab-48df-8581-26f78eff3bff-profile_image-70x70.png",
             title: "SEMUCVER",
             status: false,
             Type: null,
-            views:354
+            views: 354
         },
         {
             image: "https://static-cdn.jtvnw.net/jtv_user_pictures/elfedelobo-profile_image-1d74acb6f0797ea1-70x70.png",
             title: "El FEDELOBO",
             status: false,
             Type: null,
-            views:234
+            views: 234
         }
     ]
     const recomendados = [
@@ -53,28 +53,28 @@ export default function AsideRigth() {
             title: "El pan tostao",
             status: true,
             Type: "Rust",
-            views:30
+            views: 30
         },
         {
             image: "https://static-cdn.jtvnw.net/jtv_user_pictures/ab76403b-c87c-4439-b46b-b6cd0c07a663-profile_image-70x70.png",
             title: "El puñetas",
             status: true,
             Type: "Call of Duty",
-            views:12
+            views: 12
         },
         {
             image: "https://static-cdn.jtvnw.net/jtv_user_pictures/f1f5921c-bf2e-4232-9610-b4e2fdd8a64d-profile_image-70x70.png",
             title: "El trapesio XD",
             status: true,
             Type: "Valorant",
-            views:"2K"
+            views: "2K"
         },
         {
             image: "https://static-cdn.jtvnw.net/jtv_user_pictures/d4885242-febf-4a11-a42a-a0ad52474ee2-profile_image-70x70.png",
             title: "Porta XD",
             status: true,
             Type: "Rapeando",
-            views:"1M"
+            views: "1M"
         }
     ]
     return (
@@ -89,8 +89,9 @@ export default function AsideRigth() {
                 </svg>
             </a>
 
-            {myChannel.map((channel) => {
+            {myChannel.map((channel, index) => {
                 return <ChannelsTransform
+                    key={index}
                     img={channel.image}
                     title={channel.title}
                     status={channel.status}
@@ -99,12 +100,13 @@ export default function AsideRigth() {
                 />
             })
             }
-            
+
             <AsideRigthMidSections />
 
             {
-                recomendados.map((channel) => {
+                recomendados.map((channel, index) => {
                     return <ChannelsTransform
+                        key={index}
                         img={channel.image}
                         title={channel.title}
                         status={channel.status}
